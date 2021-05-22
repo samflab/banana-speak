@@ -13,14 +13,22 @@
             height: 10vh;
             width: 90%;
         }
+        #output{
+            display: block;
+            margin: 1rem;
+            height: 10vh;
+            width: 90%;
+            border: 1px solid black;
+        }
     </style>
 </head>
 
 <body>
     <h1>Talk bananana!!</h1>
-    <textarea id="txt-input" placeholder="Write something here"></textarea>
+    <textarea id="txt-input" class="txt-area" height="100px" placeholder="Write something here"></textarea>
     <button id="btn-translate">Translate</button>
-
+    <div>Output will come here! </div>
+    <div id="output"></div>
     <script src="app.js" type="text/javascript"></script>
 </body>
 

@@ -1,13 +1,15 @@
 var btnTranslate = document.querySelector("#btn-translate");
 var txtInput = document.querySelector("#txt-input");
-if(btnTranslate){
-    btnTranslate.addEventListener("click",clickHandler);   
+var outputDiv = document.querySelector("#output");
+
+if (btnTranslate) {
+    btnTranslate.addEventListener("click", clickHandler);
 }
-if(txtInput){
-    console.log(txtInput);
+if (outputDiv) {
+   // outputDiv.innerText = "Masudha Meher";
+    console.log(outputDiv);
 }
 
-function clickHandler(){
-    console.log("Clicked");
-    console.log("input", txtInput.value);
- };
+function clickHandler() {
+    outputDiv.innerText = "translated: "+ txtInput.value;
+};
